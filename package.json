@@ -1,0 +1,21 @@
+{
+  "name": "part3",
+  "version": "1.0.0",
+  "description": "This is only a test. Do not adjust your computer",
+  "keywords": [
+    "test"
+  ],
+  "license": "ISC",
+  "author": "Efra",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "test": "echo \"Error\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}
