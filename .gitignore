@@ -1,0 +1,23 @@
+# Node dependencies
+node_modules/
+
+# Environment variables (never commit changes)
+.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS-specific junk
+.DS_Store
+Thumbs.db
+
+# Test coverage
+coverage/
+
+# Build artifacts (backend only)
+# IMPORTANT: Do NOT ignore dist/ or build/ here,
+# because that's where your React frontend lives once built.
+# Render needs those files to serve the app.

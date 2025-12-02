@@ -4,6 +4,9 @@ const cors = require("cors");
 
 const app = express();
 
+// serve static frontend files
+app.use(express.static("dist"));
+
 let notes = [
   {
     id: "1",
