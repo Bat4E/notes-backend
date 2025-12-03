@@ -12,10 +12,11 @@
   "scripts": {
     "start": "node index.js",
     "dev": "node --watch index.js",
-    "test": "echo \"Error\" && exit 1"
+    "test": "echo \"Error\" && exit 1",
+    "build:ui": "rmdir /s /q dist && (cd ../part2-notes-FE && npm run build && xcopy dist ..\\notes-backend\\dist /E /I /Y)",
+    "deploy:full": "npm run build:ui && git add . && git commit -m \"uibuild\" && git push"
   },
   "dependencies": {
-    "cors": "^2.8.5",
     "express": "^5.1.0"
   }
 }
